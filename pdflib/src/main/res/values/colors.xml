@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--generalColor（通用颜色值）-->
+    <color name="white">@color/color_FFFFFF</color>
+    <!--commonColor（常见颜色值）-->
+    <color name="color_2D2D2D">#2D2D2D</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <!--divider-->
+    <color name="divider">@color/color_E0E0E0</color>
+</resources>

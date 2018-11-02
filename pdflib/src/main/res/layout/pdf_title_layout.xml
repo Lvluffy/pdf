@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--公共标题栏布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <!--左部返回-->
+        <LinearLayout
+            android:id="@+id/nav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20">
+
+            <ImageView
+                android:id="@+id/nav_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/pdf_nav_back" />
+
+        </LinearLayout>
+
+        <!--中间标题-->
+        <TextView
+            android:id="@+id/nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="12"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:textColor="@color/color_2D2D2D"
+            android:textSize="@dimen/text_size_18"
+            tools:text="@string/pdf_title" />
+
+    </RelativeLayout>
+
+    <!--标题分割线-->
+    <View
+        android:id="@+id/nav_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:background="@color/divider" />
+
+</LinearLayout>

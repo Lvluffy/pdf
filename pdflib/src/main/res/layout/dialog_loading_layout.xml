@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--公共加载Loading布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_loading_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/y20">
+
+        <ProgressBar
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/y35"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/base_loading_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone"
+            tools:text="@string/dialog_loading" />
+
+    </LinearLayout>
+
+</LinearLayout>
