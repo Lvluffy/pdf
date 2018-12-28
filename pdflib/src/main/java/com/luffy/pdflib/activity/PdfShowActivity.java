@@ -8,13 +8,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.github.barteksc.pdfviewer.PDFView;
 import com.luffy.pdflib.R;
 import com.luffy.pdflib.callback.download.DownloadFileCallBack;
 import com.luffy.pdflib.callback.loading.BaseLayerLoadingInterface;
 import com.luffy.pdflib.loadingDialog.LoadingDialog;
+import com.luffy.pdflib.utils.FileOperateUtils;
 import com.luffy.pdflib.utils.StatusBarUtils;
 import com.luffy.pdflib.utils.ValidUtils;
-import com.github.barteksc.pdfviewer.PDFView;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.request.BaseRequest;
 
@@ -186,5 +187,6 @@ public class PdfShowActivity extends AppCompatActivity implements View.OnClickLi
         super.onDestroy();
         //Activity销毁时，取消网络请求
         OkHttpUtils.getInstance().cancelTag(this);
+        FileOperateUtils.getInstance().deleteDir(destFileDir);
     }
 }
